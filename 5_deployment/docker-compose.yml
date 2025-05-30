@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ../2_backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+      - redis
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: aicasefiles
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: aicasefiles_db
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  redis:
+    image: redis:6
+
+volumes:
+  pgdata:

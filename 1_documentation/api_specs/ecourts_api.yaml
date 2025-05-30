@@ -1,0 +1,22 @@
+openapi: 3.0.0
+info:
+  title: eCourts API
+  version: 1.0.0
+  description: API specification for e-filing and court case management integration.
+paths:
+  /filings:
+    post:
+      summary: Submit a new court filing
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                case_id:
+                  type: string
+                document:
+                  type: string
+      responses:
+        '201':
+          description: Filing submitted successfully

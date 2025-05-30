@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: DCI Integration API
+  version: 1.0.0
+  description: API specification for integration with Directorate of Criminal Investigations (DCI) case lookup endpoints.
+paths:
+  /cases:
+    get:
+      summary: Retrieve case records
+      responses:
+        '200':
+          description: A list of case records
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    case_id:
+                      type: string
+                    status:
+                      type: string
