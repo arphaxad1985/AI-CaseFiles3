@@ -1,6 +1,6 @@
 # AI CaseFiles
 
-AI CaseFiles is a secure, AI-enhanced digital Case Management System (CMS) designed for Kenya’s Directorate of Criminal Investigations (DCI) and allied criminal justice institutions. This repository contains the full prototype view of the system including backend, frontend, data, deployment, and documentation.
+AI CaseFiles is a secure, AI-enhanced digital Case Management System (CMS) designed for Directorate of Criminal Investigations (DCI) and allied criminal justice institutions. This repository contains the full prototype view of the system including backend, frontend, data, deployment, and documentation.
 
 ## Project Structure
 
